@@ -1,9 +1,9 @@
 #!/bin/sh
 if [ -z $1 ]; then
-    echo "you need type a ssh version"
-    exit 0
+    VER=7.1
+else
+    VER=$1
 fi
-VER=$1
 TARFILE=http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-${VER}p1.tar.gz
 LOCALFILE=openssh-${VER}p1.tar.gz
 LDIR=openssh-${VER}p1
