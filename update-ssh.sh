@@ -4,6 +4,7 @@ if [ -z $1 ]; then
 else
     VER=$1
 fi
+CPUCORE=$(cat /proc/cpuinfo | grep processor | wc -l)
 TARFILE=http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-${VER}p1.tar.gz
 LOCALFILE=openssh-${VER}p1.tar.gz
 LDIR=openssh-${VER}p1
@@ -25,6 +26,6 @@ else
     sudo yum install -y zlib zlib-devel pam pam-devel openssl openssl-devel gcc patch
 fi
 ./configure --prefix=/usr --sysconfdir=/etc/ssh --enable-pam
-make; sudo make install
+make -j${CPUCORE}; sudo make install
 cd ..
 
