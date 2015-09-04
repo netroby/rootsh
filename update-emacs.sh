@@ -25,7 +25,7 @@ else
     echo "System was centos/RHEL/fedora"
     sudo yum install -y giflib-devel libjpeg-devel libtiff-devel gcc-c++ make ncurses-devel
 fi
-./configure --without-all --with-x-toolkit=no
+./configure --prefix=/usr --without-all --with-x-toolkit=no
 make -j${CPUCORE}; sudo make install
 cd ..
 
