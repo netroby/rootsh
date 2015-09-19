@@ -8,15 +8,23 @@
         <ul>
             <li><a href="http://github.com/netroby/rootsh">Source</a></li>
         </ul>
-        <p>You need wget installed, we do not using curl, because curl do not support very strict tls certificate, which may not very security. so we using wget</p>
-        <p>You may add your scripts to source, just click link before</p>
-        <h2 id="update-ssh-for-your-linux">Update ssh for your linux</h2>
-        <pre><code>wget -qO- https://rootsh.xyz/update-ssh.sh -sS  | sh</code></pre>
-        <h2 id="update-git-for-your-linux">Update git for your linux</h2>
-        <pre><code>wget -qO-  https://rootsh.xyz/update-git.sh -sS  | sh</code></pre>
-        <h2 id="update-emacs-for-your-linux">Update emacs for your linux</h2>
-        <pre><code>wget -qO-  https://rootsh.xyz/update-emacs.sh -sS  | sh</code></pre>
-        <h2>Generate tls self signed cert for nginx</h2>
-        <pre><code>wget -qO- https://rootsh.xyz/gentlscert.sh -sS | sh -s "*.netroby.com"</code></pre>
+<p>You need wget or curl installed, choose as your like.</p>
+<h2 id="update-ssh-for-your-linux">Update ssh for your linux</h2>
+<pre><code>wget -qO-   rootsh.xyz/update-ssh.sh   | sh</code></pre>
+<p>Or</p>
+<pre><code>curl -s1LS   rootsh.xyz/update-ssh.sh   | sh</code></pre>
+<h2 id="update-git-for-your-linux">Update Git for your linux</h2>
+<pre><code>wget -qO- rootsh.xyz/update-git.sh -sS  | sh</code></pre>
+<p>Or</p>
+<pre><code>curl -s1LS rootsh.xyz/update-git.sh -sS  | sh</code></pre>
+<h2 id="update-emacs-for-your-linux">Update Emacs for your linux</h2>
+<pre><code>wget -qO- rootsh.xyz/update-emacs.sh -sS  | sh</code></pre>
+<p>Or</p>
+<pre><code>curl -s1LS rootsh.xyz/update-emacs.sh -sS  | sh</code></pre>
+<h2 id="generate-tls-self-signed-cert-for-nginx">Generate tls self signed cert for nginx</h2>
+<pre><code>wget -qO- rootsh.xyz/gentlscert.sh -sS | sh -s &quot;*.netroby.com&quot;</code></pre>
+<p>Or</p>
+<pre><code>curl -s1LS rootsh.xyz/gentlscert.sh -sS | sh -s &quot;*.netroby.com&quot;</code></pre>
+
     </body>
 </html>
