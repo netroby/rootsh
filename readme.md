@@ -15,4 +15,9 @@ curl  http://rootsh.xyz/update-git.sh -sS  | sh
 ```
 curl  http://rootsh.xyz/update-emacs.sh -sS  | sh
 ```
+## Generate tls self signed cert for nginx
+
+```
+curl http://rootsh.xyz/gentlscert.sh -sS | bash -s "*.netroby.com"
+```
 
