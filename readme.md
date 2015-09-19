@@ -1,25 +1,42 @@
 # RootSH 
 
-You need wget installed, we do not using curl, because curl do not support very strict tls certificate, which may not very security. so we using wget
+You need wget or curl installed, choose as your like.
 
 ## Update ssh for your linux
 
 ```
-wget -qO-   https://rootsh.xyz/update-ssh.sh   | sh
+wget -qO-   rootsh.xyz/update-ssh.sh   | sh
 ```
+Or
+```
+curl -s1LS   rootsh.xyz/update-ssh.sh   | sh
+```
+
 ## Update Git for your linux
 
 ```
-wget -qO- http://rootsh.xyz/update-git.sh -sS  | sh
+wget -qO- rootsh.xyz/update-git.sh -sS  | sh
+```
+Or
+```
+curl -s1LS rootsh.xyz/update-git.sh -sS  | sh
 ```
 ## Update Emacs for your linux
 
 ```
-wget -qO- http://rootsh.xyz/update-emacs.sh -sS  | sh
+wget -qO- rootsh.xyz/update-emacs.sh -sS  | sh
+```
+Or
+```
+curl -s1LS rootsh.xyz/update-emacs.sh -sS  | sh
 ```
 ## Generate tls self signed cert for nginx
 
 ```
-wget -qO- http://rootsh.xyz/gentlscert.sh -sS | sh -s "*.netroby.com"
+wget -qO- rootsh.xyz/gentlscert.sh -sS | sh -s "*.netroby.com"
+```
+Or
+```
+curl -s1LS rootsh.xyz/gentlscert.sh -sS | sh -s "*.netroby.com"
 ```
 
