@@ -20,6 +20,6 @@ wget -qO- http://rootsh.xyz/update-emacs.sh -sS  | sh
 ## Generate tls self signed cert for nginx
 
 ```
-wget -qO- http://rootsh.xyz/gentlscert.sh -sS | bash -s "*.netroby.com"
+wget -qO- http://rootsh.xyz/gentlscert.sh -sS | sh -s "*.netroby.com"
 ```
 
