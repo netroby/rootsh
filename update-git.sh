@@ -14,7 +14,7 @@ fi
 if [ -d /etc/yum.repos.d ];then
     distro="centos or fedora"
     sudo yum update -y 
-    sudo yum groupinstall "Development Tools"
+    sudo yum groupinstall -y "Development Tools"
     sudo yum install -y openssl-devel zlib-devel perl-ExtUtils-MakeMaker svn tcl perl-Locale-Msgfmt gettext wget
 fi
 
