@@ -40,3 +40,14 @@ Or
 curl -s1LS rootsh.xyz/gentlscert.sh -sS | sh -s "*.netroby.com"
 ```
 
+## Install hack fonts for linux
+
+```
+wget -qO- rootsh.xyz/hackfonts.sh -sS | sh 
+```
+Or
+```
+curl -s1LS rootsh.xyz/hackfonts.sh -sS | sh 
+```
+
+
