@@ -24,9 +24,9 @@ if [ -d /etc/apt ]; then
     sudo apt-get -y install  libncurses-dev
 else
     echo "System was centos/RHEL/fedora"
-    sudo yum install -y giflib-devel libjpeg-devel libtiff-devel gcc-c++ make ncurses-devel
+    sudo yum install -y giflib-devel libjpeg-devel libtiff-devel gcc-c++ make ncurses-devel 
 fi
-./configure --prefix=/usr --without-all --without-x
+./configure --prefix=/usr --without-all --without-x --with-xml2
 make -j${CPUCORE}; sudo make install
 cd ..
 
