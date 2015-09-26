@@ -21,7 +21,7 @@ cd $LDIR
 if [ -d /etc/apt ]; then
     echo "System was Debunt/Ubuntu"
     sudo apt-get build-dep -y emacs
-    sudo apt-get -y install  libncurses-dev
+    sudo apt-get -y install  libncurses-dev libxml2-dev
 else
     echo "System was centos/RHEL/fedora"
     sudo yum install -y giflib-devel libjpeg-devel libtiff-devel gcc-c++ make ncurses-devel 
