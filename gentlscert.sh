@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 
 # Specify where we will install
 # the server certificate
