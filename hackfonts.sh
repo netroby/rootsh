@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 if [ ! -f /usr/bin/unzip ]; then
     echo "Please installed unzip first"
     exit 0
