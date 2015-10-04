@@ -1,4 +1,5 @@
 #!/bin/sh
+set -ex
 if [ -z $1 ]; then
     VER=24.5
 else
