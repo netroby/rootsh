@@ -1,6 +1,5 @@
 #!/bin/sh
-set -ex
-VERSION="2.6.0"
+VERSION="2.6.1"
 if [ ! -z $1 ];then
     VERSION=$1
 fi
