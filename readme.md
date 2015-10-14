@@ -31,4 +31,8 @@ wget -qO- rootsh.xyz/gentlscert.sh -sS | sh -s "*.netroby.com"
 wget -qO- rootsh.xyz/hackfonts.sh -sS | sh 
 ```
 
+## Donate me please
 
+![Scan QRCode donate me via Alipay](https://www.netroby.com/images/alipayme.jpg)
+
+**Scan QRCode donate me via Alipay**
