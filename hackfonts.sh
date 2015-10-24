@@ -5,7 +5,7 @@ if [ ! -f /usr/bin/unzip ]; then
     exit 0
 fi
 file=Hack-v2_013-ttf.zip
-wget https://github.com/chrissimpkins/Hack/releases/download/v2.013/$file
+wget https://github.com/chrissimpkins/Hack/releases/download/v2.015/$file
 unzip $file
 sudo chmod a+x Hack-*.ttf
 sudo mv Hack-*.ttf /usr/share/fonts/truetype/
