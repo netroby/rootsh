@@ -25,6 +25,7 @@ else
     echo "System was centos/RHEL/fedora"
     sudo yum install -y zlib zlib-devel pam pam-devel openssl openssl-devel gcc patch
 fi
+chmod a+x configure
 ./configure --prefix=/usr --sysconfdir=/etc/ssh --enable-pam
 make -j${CPUCORE}; sudo make install
 cd ..
