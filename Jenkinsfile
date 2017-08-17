@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "rsync --rsync-path='sudo rsync'  -avzP ./* /data/www/svc.ovh"
+                sh "sudo rsync --rsync-path='sudo rsync'  -avzP ./* /data/www/svc.ovh"
             }
         }
     }
